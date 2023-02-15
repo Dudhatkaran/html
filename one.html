@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+   <!-- <h1 class="mid" style="text-align: center;">Hello world</h1> -->
+
+   <!-- <script>
+      var o = 300;
+      var p = 20;
+      var q = 26;
+      var r = 10;
+      var s = 5000;
+
+if(o>p){
+   if(o>q){
+      if(o>r){
+         if(o>s){
+            console.log("o",o);
+         }
+         else{
+            console.log("s",s);
+         }
+      }
+      else{
+         if(r>s){
+            console.log("r",r);
+         }
+         else{
+            console.log("s",s);
+         }
+      }
+   }
+   else{
+      if(q>r){
+         if(q>s){
+            console.log("q",q);
+         }
+         else{
+            console.log("s",s);
+         }
+      }
+   }
+}
+else{
+   if(p>q){
+      if(p>r){
+         if(p>s){
+            console.log("p",p);
+         }
+         else{
+            console.log("s",s);
+         }
+      }
+   }
+}
+
+            
+   </script> -->
+   
+   <label>fname
+      <input id="namef" type="text">
+   </label>
+   <label>lname
+      <input id="namel" type="text">
+   </label>
+   <button onclick="show_click()">click me</button>
+
+   <h1 id="fname"></h1>
+   <h1 id="lname"></h1>
+
+<script>
+    
+   function show_click(){
+      let f_name = document.getElementById("namef").value;
+      let l_name = document.getElementById("namel").value;
+
+      document.getElementById("fname").innerHTML = f_name; 
+      document.getElementById("lname").innerHTML = l_name;
+   }
+   //  let a = 1000;
+   //  let b = a.toString()
+
+   //  console.log(typeof(b));
+
+   //  let bb="45653.4895";
+   //  let cc=parseFloat(bb)
+   //  console.log(cc);
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0px 3%;
+}
+.nev{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+.data{
+    display: flex;
+    width: 100%;
+}
+.contant{
+    width: 50%;
+}
+.img{
+    width: 50%;
+}
+.second{
+    margin-top: 130px;
+}
+.boxes1{
+    display: flex;
+    width: 100%;
+}
+.box1{
+    width: 30%;
+}
+.boxes2{
+    display: flex;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.box2{
+    width: 30%;
+}
+.three{
+    margin-top: 50px;
+    background-color: rgb(204,213,196);
+}
+.topic{
+    display: flex;
+    width: 100%;
+}
+.phara{
+    width: 50%;
+}
+.image{
+    width: 50%;
+    padding-top: 30px;
+}
+.point{
+    display: flex;
+    width: 100%;
+    background-color: white;
+    margin-top: 50px;
+}
+.box3{
+    width: 30%;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.four{
+    margin-top: 80px;
+}
+.images{
+    display: flex;
+    width: 100%;
+}
+.images1{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+}
+.img1{
+    width: 30%;  
+}
+.five{
+    margin-top: 100px;
+}
+.topics{
+    display: flex;
+    width: 100%;
+}
+.data1{
+    width: 50%;
+    padding-top: 70px;
+}
+.photo{
+    width: 50%;  
+}
+.six{
+    margin-top: 100px;
+    background-color: rgb(204,213,196);
+    height: 600px;
+}
+.work{
+    background-color: aliceblue;
+    display: flex;
+    width: 100%;
+    height: 550px; 
+}
+.phara{
+    width: 60%;
+}
+.heading{
+    width: 40%;
+}
+.cards{
+    display: flex;
+    width: 100%;
+    padding-top: 50px;
+}
+.card{
+    width: 50%;
+}
+.seven{
+    background-color: rgb(204,213,196);
+    height: 600px;
+}
+.last{
+    display: flex;
+    width: 100%;
+}
+.onlyimg{
+    width: 40%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.detail{
+    width: 60%;
+    background-color: white;
+    height: 600px;
+}
+.footer{
+    height: 250px;
+    background-color: rgb(51,51,51);
+    color: white;
+}

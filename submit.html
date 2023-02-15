@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .input-container {
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+
+    .icon {
+      padding: 10px;
+      background: dodgerblue;
+      color: white;
+      min-width: 50px;
+      text-align: center;
+    }
+
+    .input-field {
+      width: 80%;
+      padding: 10px;
+      outline: none;
+      margin-left: 10%;
+    }
+
+    .input-field:focus {
+      border: 2px solid dodgerblue;
+    }
+
+    .btn {
+      background-color: rgb(94, 156, 217);
+      color: white;
+      padding: 15px 20px;
+      border: none;
+      cursor: pointer;
+      width: 25%;
+      opacity: 0.9;
+      margin-left: 150px;
+    }
+
+    .btn:hover {
+      opacity: 1;
+    }
+
+    body {
+      background-color: rgb(123, 160, 241);
+    }
+
+    .box {
+      background-color: rgb(152, 199, 237);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box"
+    style="width: 400px; height: 300px; margin-left: 550px; margin-top: 180px; border: 2px solid black; border-radius: 10px;">
+    <h2 style="text-align: center;">Form</h2>
+    <div class="input-container">
+
+      <input id="namef" class="input-field" type="text" placeholder="Username" name="usrnm">
+    </div><br>
+
+    <button type="submit" onclick="submit()" class="btn">submit</button><br><br>
+    <h1 id="fname" style="text-align: center;">MANALI BHUT</h1>
+
+  </div>
+
+
+  <script src="submit.js"></script>
+</body>
+
+</html>

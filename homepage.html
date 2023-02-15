@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        .box{
+           width: 400px;
+           height: 500px;
+           border: 1px solid black;
+           text-align: center;
+           margin-left: 550px;
+           margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>Home Page</h1> <br>
+        <label for="">first name <br>
+            <input type="first name" id="first name">
+        </label><br>
+        <label for="">last name <br>
+            <input type="last name" id="last name">
+        </label><br>
+        <label for="">Email <br>
+            <input type="email" id="email">
+        </label><br>
+        <label for="">Password <br>
+            <input type="text" id="password">
+        </label><br>
+        <label for="">Address <br>
+            <input type="text" id="address">
+        </label> <br>
+        <br>
+        <button class="btn btn-danger" onclick="updatenow()">Update</button>
+    </div>
+        
+    
+</body>
+<script>
+
+    let userList = JSON.parse(localStorage.getItem("userData"));
+
+    let user = JSON.parse(localStorage.getItem("id"));
+
+    let thisUser = {}
+
+    userList.map((ele, index) => {
+        if (index == user) {
+            document.getElementById("first name").value = ele.firstname;
+            document.getElementById("last name").value = ele.lastname;
+            document.getElementById("email").value = ele.email;
+            document.getElementById("password").value = ele.password;
+            document.getElementById("address").value = ele.address;
+        }
+    })
+
+    function updatenow() {
+        let firstname = document.getElementById("first name").value;
+        let lastname = document.getElementById("last name").value;
+        let email = document.getElementById("email").value;
+        let password = document.getElementById("password").value;
+        let address = document.getElementById("address").value;
+
+        let obj = { firstname, lastname, email, password, address }
+
+        userList[user] = obj;
+
+        localStorage.setItem("userData", JSON.stringify(userList))
+        // console.log(userList);
+    }
+</script>
+
+</html>

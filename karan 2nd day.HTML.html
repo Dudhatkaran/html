@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>karan</title>
+</head>
+<body>
+
+    <form>
+
+        <input type="text" placeholder="enter your name"><br>
+        <input type="email" placeholder="enter email"><br>
+        <input type="password" placeholder="enter password"><br>
+        <input type="number" placeholder="enter number"><br>
+        <input type="date"><br>
+        <label for="">male</label><input type="radio" name="gender"><br>
+        <label for="">female</label><input type="radio" name="gender"><br>
+        <input type="color"><br>
+
+        <select name="" id="">
+            <option value="">india</option>
+            <option value="">USA</option>
+            <option value="">pakistan</option>
+
+
+        </select><br>
+
+        <input type="submit"><hr>
+
+
+    </form>
+
+    <table>
+        <tbody><tr>
+            <th style="background-color: gray;">label</th>
+            <th style="background-color: gray;">input</th>
+            <th style="background-color: gray;">button</th>
+        </tr>
+        <tr>
+            <td style="background-color: rgb(75, 129, 98);">name</td>
+            <td><input type="text"></td>
+            <td><button style="color: blue;">edit</button> <button style="color: blue;">delete</button></td>
+        </tr>
+        <tr>
+            <td style="background-color: rgb(75, 129, 98);">email</td>
+            <td><input type="text"></td>
+            <td><button style="color: blue;">edit</button> <button style="color: blue;">delete</button></td>
+        </tr>
+        <tr>
+            <td style="background-color: rgb(75, 129, 98);">password</td>
+            <td><input type="text"></td>
+            <td><button style="color: blue;">edit</button> <button style="color: blue;">delete</button></td>
+
+        </tr>
+        <tr>
+            <td style="background-color: rgb(75, 129, 98);">number</td>
+            <td><input type="text"></td>
+            <td><button style="color: blue;">edit</button> <button style="color: blue;">delete</button></td>
+
+        </tr>
+        <tr>
+            <td style="background-color: rgb(75, 129, 98);">date</td>
+            <td><input type="text"></td>
+            <td><button style="color: blue;">edit</button> <button style="color: blue;">delete</button></td>
+
+        </tr>
+        <tr>
+            <td style="background-color: rgb(75, 129, 98);">gender</td>
+            <td><label for="">male</label><input type="radio" name="gender"> <label for="">female</label> <input type="radio" name="gender"> </td>
+            <td><button style="color: blue;">edit</button> <button style="color: blue;">delete</button></td>
+
+        </tr>
+        <tr>
+            <td style="background-color: rgb(75, 129, 98);">color</td>
+            <td><input type="text"></td>
+            <td><button style="color: blue;">edit</button> <button style="color: blue;">delete</button></td>
+
+        </tr>
+        <tr>
+            <td style="background-color: rgb(75, 129, 98);">country</td>
+            <td> india<input type="checkbox" value="abc"> usa <input type="checkbox" value="abc"> rusia <input type="checkbox" value="abc"> </td>
+            <td><button style="color: blue;">edit</button> <button style="color: blue;">delete</button></td>
+
+        </tr>
+        <tr><td></td>
+        <td></td>
+        <td style="color: blue;"><input type="submit"></td>
+
+
+
+
+    </tr></tbody></table>
+
+
+
+
+
+
+
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>

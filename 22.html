@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            margin: auto;
+        }
+        .box1{
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <script>
+            var aaa=sessionStorage.setItem('ABCD',"hello");
+            console.log(aaa);
+    </script> -->
+    <div class="box" style="width: 300px; height: 300px; border: 1px solid black;">
+        <label >name</label> <br>
+        <input type="text" id="addTxt">
+        <button onclick="add_data()">submit</button>
+    </div>
+    <div class="box1" style="border: 1px solid black; display: flex; width: 100px;" id="notes"></div>
+
+
+    <script>
+        showNotes();
+        // Add data
+        function add_data() {
+            let addTxt = document.getElementById("addTxt");
+            let notes = localStorage.getItem("notes");
+
+            if (notes == null) {
+                notesObj = [];
+            }
+            else {
+                notesObj = JSON.parse(notes);
+            }
+            notesObj.push(addTxt.value);
+            localStorage.setItem("notes", JSON.stringify(notesObj));
+            addTxt.value = "";
+
+            showNotes();
+        };
+        // Show data
+        function showNotes() {
+            let notes = localStorage.getItem("notes");
+
+            if (notes == null) {
+                notesObj = [];
+            }
+            else {
+                notesObj = JSON.parse(notes);
+            }
+
+            let html = notesObj.map((element, index) => {
+                return (
+                    `<div class="noteCard my-2 mx-2 card" style="width: 18rem;">
+                        <div class="card-body">
+                        <h5 class="card-title"> Note ${index + 1} </h5>
+                        <p class="card-text">${element}</p>
+                        <button id="${index}"
+                            onclick="deleteNote(this.id)"
+                            class="btn btn-primary">
+                            Delete Note
+                        </button>
+                        </div>
+                    </div>`
+                )
+            });
+
+            let notesElm = document.getElementById("notes");
+
+            if (notesObj.length == 0) {
+                notesElm.innerHTML = `Plase add Notes`;
+            } else {
+                notesElm.innerHTML = html;
+            }
+        }
+
+        function deleteNote(e) {
+            console.log("del index", e);
+            let notes = localStorage.getItem("notes");
+
+            if (notes == null) {
+                notesObj = [];
+            }
+            else {
+                notesObj = JSON.parse(notes);
+            }
+        }
+        notesObj.splice(e, 1);
+
+        localStorage.setItem("notes", JSON.stringify(notesObj));
+
+    </script>
+</body>
+
+</html>

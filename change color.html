@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change color</title>
+</head>
+
+<body>
+
+    <button style="height: 50px; width: 200px; background-color: rgb(233, 95, 95); color: rgb(218, 203, 203) ; margin-top: 20%; margin-left: 43%; font-size: 30px;" id="Color" onclick="changeclick()">change Color</button>
+    
+    <script>
+        const Color = document.getElementById('Color'),
+            colors = [ 'yellow', 'red', 'blue' , 'green' , 'aquamarine' , 'crimson' , 'black' , 'darkmagenta' , 'rgb(226, 157, 157)' , 'rgb(26, 17, 57)' ];
+        let colorIndex = 0;
+
+        function changeclick(){
+            document.body.style.backgroundColor = colors[colorIndex];
+            colorIndex = (colorIndex + 1) % colors.length
+        }
+    </script>
+
+</body>
+
+</html>

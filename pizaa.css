@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+.sec1 {
+    background-image: url("./image/pizza\ background.jpg");
+    height: 700px;
+    background-size: cover;
+}
+.nev {
+    display: flex;
+    background-color: black;
+    color: white;
+    height: auto;
+    width: 100%;
+}
+.nevbar ul {
+    list-style: none;
+    margin: 10px;
+    cursor: pointer;
+}
+.nevbar li {
+    display: inline;
+    padding: 10px;
+}
+.nevbar li:hover {
+    color: rgb(248, 212, 54);
+}
+.intro {
+    text-align: center;
+    color: white;
+    padding-top: 230px;
+}
+.welcome {
+    font-size: 20px;
+    color: rgb(248, 212, 54);
+    font-family: cursive;
+}
+.wel {
+    font-size: 40px;
+    font-weight: 900;
+    font-variant: small-caps;
+}
+.intro button {
+    margin: 10px;
+    padding: 10px;
+    background-color: #eedbb8;
+    border: none;
+}
+button.a {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+}
+.contects {
+    background-color: black;
+    color: white;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.cont {
+    margin: 15px;
+    padding: 0px 4%;
+    padding-top: 30px;
+}
+.cont1 {
+    padding: 20px 70px 20px 20px;
+    background-color: #eedbb8;
+    color: aliceblue;
+}
+.cont1 i {
+    cursor: pointer;
+    padding-right: 23px;
+}
+.part1 {
+    display: flex;
+    background-color: rgb(34,33,38);
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+.part1 img {
+    height: 400px;
+    width: 600px;
+}
+.part1 .p1 {
+    padding: 20px 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: 300;
+}
+.part1 span {
+    font-weight: 500;
+    font-size: 30px;
+    font-family: cursive;
+    color: rgb(248, 212, 54);
+    cursor: pointer;
+}
+.part1 span:hover {
+    border-bottom: 1.5px solid rgb(248, 212, 54);
+}
+.text .p {
+    color: rgb(199, 199, 199);
+    font-size: 12px;
+    padding: 20px 20px;
+    font: caption;
+}
+.services {
+    background-color: rgb(248, 212, 54);
+    height: auto;
+    width: 100%;
+}
+.icon {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 0px 15px;
+    cursor: pointer;
+    transition: 1s;
+}
+.icon:hover {
+    border-radius: 50%;
+    transition: 1s;
+}
+.intro1 {
+    text-align: center;
+    padding: 20px;
+}
+.intro1 span {
+    color: black;
+    font-size: 30px;
+    font-weight: 300;
+    font-family: cursive;
+    cursor: pointer;
+}
+.intro1 span:hover {
+    border-bottom: 1.5px solid rgb(0, 0, 0);
+    transition: 0.5s;
+}
+.menus {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 15%;
+}
+.menus p {
+    /* margin: 10px; */
+    /* font-size: 10px; */
+    padding: 20px 0;
+    font-size: 15px;
+    color: #eedbb8;
+}
+.m_sp {
+    font-size: 20px;
+    font-weight: 100;
+    color: black;
+    padding: 5px;
+    font-family: serif;
+}
+.sec3 {
+    background-color: rgb(34,33,38);
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 30px;
+}
+.pizzaa {
+    background-color: rgb(34,33,38);
+    padding: 50px 30%;
+}
+.pizzaa p {
+    text-align: center;
+    color: rgb(185, 185, 185);
+    padding-top: 30px;
+}
+.pizzaa p span {
+    font-size: 30px;
+    font-weight: 200;
+    color: white;
+    font-family: sans-serif;
+}
+.p_menus .items {
+    color: white;
+    padding: 15px 10px;
+}
+.p_menus img {
+    height: 180px;
+    width: 210px;
+}
+.p_menus button {
+    background-color: transparent;
+    color: white;
+    padding: 4px 20px;
+    cursor: pointer;
+    border: 1px solid white;
+    margin: 5px;
+}
+.p_menus button:hover {
+    background-color: #eedbb8;
+    /* transition: 0.5s; */
+    color: black;
+    border: none;
+    padding: 5px 20px;
+}
+.p_menus span {
+    font-size: 15px;
+    font-family: cursive;
+    color: #eedbb8;
+    font-weight: 300;
+}
+.sec4 {
+    background-color: rgb(34,33,38);
+    padding-top: 50px;
+}
+.sec4 p {
+    text-align: center;
+    padding: 30px;
+    color: rgb(181, 181, 181);
+}
+.sec4 span {
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    font-style: inherit;
+}
+.pizzas_items {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background-color: rgb(34,33,38);
+    color: white;
+}
+.m_menu {
+    display: flex;
+}
+.m_menu p {
+    padding: 10px 10px;
+}
+.iiii {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+.text span {
+    font-size: 20px;
+    font-weight: 300;
+    font-family: cursive;
+    color: #eedbb8;
+
+}
+.text p {
+    font-size: 15px;
+    color: rgb(204, 197, 197);
+}
+.images {
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px 70px 0px;
+}
+.images img {
+    height: 210px;
+    width: auto;
+}
+.service {
+    display: flex;
+    background-color: rgb(34,33,38);
+}
+.service img {
+    height: 400px;
+    width: auto;
+}
+.service_menun {
+    margin: 20px;
+}
+.btn button {
+    padding: 10px 20px;
+    margin: 20px 20px 20px 10px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+.btn button:hover {
+    color: black;
+    background-color: #eedbb8;
+    cursor: pointer;
+}
+.services_menun img {
+    height: 150px;
+    padding: 0px 40px;
+}
+.services_menun p {
+    color: rgb(221, 219, 219);
+    padding: 5px 10px;
+}
+.services_menun span {
+    font-size: 15px;
+    font-family: cursive;
+    color: #eedbb8;
+}
+.drinks {
+    display: flex;
+    padding: 10px 40px;
+}
+.services_menun button {
+    padding: 5px 10px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+.services_menun button:hover {
+    background-color: #eedbb8;
+    color: black;
+}
+.services_menun h1 {
+    font-size: 15px;
+    color: #eedbb8;
+    font-family: cursive;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.blogs {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5%;
+}
+.other img {
+    height: 200px;
+    width: 200px;
+    padding: 0px 100px;
+}
+.mapsec {
+    display: flex;
+    padding-top: 70px;
+}
+.map {
+    width: 600px;
+    height: 500px;
+}
+form {
+    padding: 50px 100px;
+    color: white;  
+}
+input {
+    padding: 10px 40px;
+    background-color: transparent;
+    border: none;
+    border: 1px solid white;
+}
+.mapsec button {
+    margin: 0px 100px;
+    padding: 10px 20px;
+    position: relative;
+    bottom: 20px;
+    background-color: #eedbb8;
+}
+.footer{
+    height: 400px;
+}
+.boxes{
+    display: flex;
+    width: 100%;
+}
+.box1{
+    width: 25%;
+    padding-top: 100px;
+    color: white;  
+}
+.copyright {
+    padding: 70px;
+    text-align: center;
+    color: gray;
+    background-color: #211e18;
+}

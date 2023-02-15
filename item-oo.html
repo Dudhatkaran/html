@@ -1,0 +1,276 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            background-color: rgb(132, 235, 235);
+        }
+
+        .text {
+            margin: 10px;
+            border-radius: 5px;
+            height: 50px;
+            width: 120px;
+            position: relative;
+            left: 630px;
+            top: 80px;
+            border: 3px solid black;
+        }
+
+        .main {
+            padding-left: 500px;
+            padding-top: 100px;
+        }
+
+        .Item {
+            display: flex;
+        }
+
+        button {
+            width: 80px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <input type="text" class="text" id="up">
+    </div>
+    <div class="main">
+        <div class="Item">
+            <h3 style="font-size: x-large;">Item-1</h3>
+            <button onclick="b1()" style="background-color: greenyellow; font-size: 20px;">+</button>
+            <button onclick="b2()" style="background-color: rgb(244, 122, 61); font-size: 30px;">-</button>
+            <input type="text" style="width: 120px; margin-left: 30px; border: 2px solid black; font-size: 20px;"
+                id="h1" value="0" disabled>
+        </div> <br>
+        <div class="Item">
+            <h3 style="font-size: x-large;">Item-2</h3>
+            <button onclick="b3()" style="background-color: greenyellow; font-size: 20px;">+</button>
+            <button onclick="b4()" style="background-color: rgb(244, 122, 61); font-size: 30px;">-</button>
+            <input type="text" style="width: 120px; margin-left: 30px; border: 2px solid black; font-size: 20px;"
+                id="h2" value="0" disabled>
+        </div> <br>
+        <div class="Item">
+            <h3 style="font-size: x-large;">Item-3</h3>
+            <button onclick="b5()" style="background-color: greenyellow; font-size: 20px;">+</button>
+            <button onclick="b6()" style="background-color: rgb(244, 122, 61); font-size: 30px;">-</button>
+            <input type="text" style="width: 120px; margin-left: 30px; border: 2px solid black; font-size: 20px;"
+                id="h3" value="0" disabled>
+        </div>
+    </div>
+    <script>
+        var h = 0;
+        var a = 0;
+        var b = 0;
+
+        function b1() {
+            h = h + 1;
+            if(h==1){
+                additem();
+            }
+
+            var a = document.getElementById("h1").value = h;
+           
+
+        }
+        function b2() {
+            if (h > 0) {
+                h = h - 1;
+                document.getElementById("h1").value = h;
+            }
+
+        }
+
+        function b3() {
+            a = a + 1;
+            document.getElementById("h2").value = a;
+
+
+        }
+        function b4() {
+            if (a > 0) {
+                a = a - 1;
+                document.getElementById("h2").value = a;
+            }
+
+        }
+        function b5() {
+            b = b + 1;
+            document.getElementById("h3").value = b;
+
+        }
+        function b6() {
+            if (b > 0) {
+                b = b - 1;
+                document.getElementById("h3").value = b;
+            }
+
+        }
+        
+        function additem(){
+            var o = JSON.parse(document.getElementById("up").value);
+            o=o+1;
+            var ans = document.getElementById('up').value = o;
+        }
+
+    </script>
+
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text {
+            margin: 10px;
+            border-radius: 5px;
+            height: 40px;
+            width: 100px;
+            position: relative;
+            left: 500px;
+        }
+        
+        .main {
+            position: relative;
+            left: 300px;
+            top: 30px;
+        }
+        
+        .item {
+            display: flex;
+        }
+        
+        button {
+            width: 50px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <input type="text" value="0" class="text" id="up">
+    </div>
+
+    <div class="main">
+        <div class="item">
+            <h3>item=1</h3>
+            <button onclick="a1()">+</button>
+            <button onclick="a2()">-</button>
+            <input type="text" id="h1" value="0" disabled>
+        </div>
+        <div class="item">
+            <h3>item=2</h3>
+            <button onclick="a3()">+</button>
+            <button onclick="a4()">-</button>
+            <input type="text" id="h2" value="0" disabled>
+        </div>
+        <div class="item">
+            <h3>item=3</h3>
+            <button onclick="a5()">+</button>
+            <button onclick="a6()">-</button>
+            <input type="text" id="h3" value="0" disabled>
+        </div>
+    </div>
+
+
+    <script>
+        var x = 0;
+        var y = 0;
+        var z = 0;
+
+        function a1() {
+            x = x + 1;
+            if (x == 1) {
+                addItem();
+
+            }
+
+            var a = document.getElementById("h1").value = x;
+        }
+
+        function a2() {
+            if (x > 0) {
+                x = x - 1;
+                document.getElementById("h1").value = x;
+            }
+        }
+        function a2() {
+            x = x - 1;
+            if (x == 1) {
+                removeItem();
+
+            }
+
+            var b = document.getElementById("h1").value = x;
+        }
+
+        function a3() {
+            y = y + 1;
+            if (y == 1) {
+                addItem();
+
+            }
+            document.getElementById("h2").value = y;
+
+
+        }
+
+        function a4() {
+            if (y > 0) {
+                y = y - 1;
+                document.getElementById("h2").value = y;
+            }
+        }
+
+        function a5() {
+            z = z + 1;
+            if (z == 1) {
+                addItem();
+
+            }
+            document.getElementById("h3").value = z;
+
+        }
+
+        function a6() {
+            if (z > 0) {
+                z = z - 1;
+                document.getElementById("h3").value = z;
+            }
+        }
+
+        function addItem() {
+
+            let item = JSON.parse(document.getElementById("up").value);
+            item = item + 1;
+            var ans = document.getElementById("up").value = item;
+        }
+
+        function removeItem() {
+
+            let item = JSON.parse(document.getElementById("up").value);
+            item = item - 1;
+            var ans = document.getElementById("up").value = item;
+        }
+    </script>
+
+</body>
+
+</html>

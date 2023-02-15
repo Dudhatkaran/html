@@ -1,0 +1,24 @@
+.nev{
+    display: flex;
+    justify-content: space-between;
+}
+.list ul{
+    display: flex;
+}
+.list ul li{
+    list-style: none;
+    padding: 5px;
+}
+.heading{
+    margin-top: 100px;
+    margin-left: 50px;
+}
+.cont{
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 100px;
+}
+.point{
+    padding-left: 200px;
+    padding-right: 200px;
+}

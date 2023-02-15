@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initialscale=
+1.0">
+    <title>iteam</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/
+4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+
+
+    <div class="box">
+        <h1><u>Iteam 1</u></h1>
+        <button
+            style="display: block; position: relative; left: 150px; bottom: 60px; height: 50px; width: 50px; background-color: rgb(80, 151, 208)"
+            onclick="addTheValue(1)"><i class='bx bx-plus'></i></button>
+        <button
+            style="position: relative; left: 220px; bottom: 110px; height: 50px; width: 50px; background-color: rgb(233, 132, 132); "
+            onclick="removeTheValue(1)"><i class='bx bx-minus'></i></button>
+        <button
+            style="position: relative; left: 240px; bottom: 110px; height: 40px; width: 40px; background-color: rgb(109, 237, 109);"><b
+                id="firstValue">1</b></button>
+
+    </div>
+    <div class="box1">
+        <h1><u>Iteam 2</u></h1>
+        <button
+            style="display: block; position: relative; left: 150px; bottom: 60px; background-color: rgb(80, 151, 208); height: 50px; width: 50px;"
+            onclick="add(1)"><i class='bx bx-plus'></i></button>
+        <button
+            style="position: relative; left: 220px; bottom: 110px; height: 50px; width: 50px; background-color: rgb(233, 132, 132);"
+            onclick="remove(1)"><i class='bx bx-minus'></i></button>
+        <button
+            style="position: relative; left: 240px; bottom: 110px;  height: 40px; width: 40px;  background-color: rgb(109, 237, 109);"><b
+                id="hello">1</b></button>
+
+    </div>
+
+    <div class="box1">
+        <h1><u>Iteam 3</u></h1>
+        <button
+            style="display: block; position: relative; left: 150px; bottom: 60px; background-color: rgb(80, 151, 208); height: 50px; width: 50px;"
+            onclick="adddata(1)"><i class='bx bx-plus'></i></button>
+        <button
+            style="position: relative; left: 220px; bottom: 110px; height: 50px; width: 50px; background-color: rgb(233, 132, 132);"
+            onclick="removedata(1)"><i class='bx bx-minus'></i></button>
+        <button
+            style="position: relative; left: 240px; bottom: 110px;  height: 40px; width: 40px;  background-color: rgb(109, 237, 109);"><b
+                id="data">1</b></button>
+
+    </div>
+
+
+    <script>
+        var h=0;
+        var a=0;
+        var b=0;
+
+        function b1()
+        {
+            h=h+1;
+            document.getElementById("h1").value=h;
+           
+        }
+        function b2()
+        {
+            if(h>0)
+            {
+            h=h-1;
+            document.getElementById("h1").value=h;
+            }
+           
+        }
+
+        function b3()
+        {
+            a=a+1;
+            document.getElementById("h2").value=a;
+            
+           
+        }
+        function b4()
+        {
+            if(a>0)
+            {
+            a=a-1;
+            document.getElementById("h2").value=a;
+            }
+           
+        }
+
+        function b5()
+        {
+            b=b+1;
+            document.getElementById("h3").value=b;
+           
+        }
+        function b6()
+        {
+            if(b>0)
+            {
+            b=b-1;
+            document.getElementById("h3").value=b;
+            }
+           
+        }
+
+   
+    </script>
+</body>
+
+</html>

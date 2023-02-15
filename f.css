@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    background-color: lightgray;
+}
+p{
+    margin: 0;
+    font-family: Century Schoolbook;
+    font-size: 22px;
+    font-weight: 500;
+}
+/* Header */
+.text_head{
+    height: 50px;
+    background-color: skyblue;
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.hed{
+    font-size: 35px;
+    border: none;
+    cursor: pointer;
+    background: none;
+    font-family: Century Schoolbook;
+}
+/* ------------------------------------------------------------------------------------------------------ */
+/* Box of 10 */
+.main_box{
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.peta-box{
+    display: flex;
+    margin-bottom: 30px;
+    transition: box-shadow 0.5s ease-in-out, transform 0.40s ease-in-out;
+    margin: 6px;
+    height: 300px; 
+    border: 1px solid rgb(63, 60, 60);
+    border-radius: 10px; 
+}
+.peta-box:hover {
+    box-shadow: 0 11px 11px 0 rgba(0, 0, 0,.16);
+    transform: translateY(-5px);
+    border-radius: 15px;
+  }
+img{
+    height: 300px;
+    border-radius: 15px 0 0 15px;
+}
+.text_box{
+    background-color: rgb(226, 226, 226);
+    border-radius: 0 15px 15px 0;
+    width: 285px;
+    display: grid;    
+}
+.text_box p{
+    margin: 10px;
+}
+.chek{
+    margin-left: 40%;
+    height: 30px;
+    width: 30px;
+}
+/* Billing */
+.main_bill{
+    position: sticky;
+    bottom: 0;
+}
+.peta_bill
+{
+    display: flex;
+    background-color: darkgray;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: space-evenly;
+    padding: 10px;
+    border: 5px solid rgb(44, 42, 42);
+    border-radius: 10px;
+}
+.BX{
+    display: grid;
+    justify-items: center;
+}
+.bx{
+    height: 30px;
+    width: 150px;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 5px;
+}
+.bbttnn{
+    height: 50px;
+    width: 100px;
+    font-family: Century Schoolbook;
+    font-size: 20px;
+    margin-top: 10%;
+}

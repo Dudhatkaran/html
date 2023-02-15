@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nev{
+            height: 100px;
+            background-color: antiquewhite;
+            display: flex;
+        }
+        img{
+            margin-left: 50px;
+            margin-top: 10px;
+        }
+        .list ul{
+            /* display: flex; */
+            list-style: none;
+            margin-left: 200px;
+            margin-top: 40px;
+        }
+        .mainlist{
+            display: flex;
+        }
+        .list ul li{
+            margin-left: 100px;
+        }
+        .list{
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown{
+            position: absolute;
+            background-color: aqua;
+            display: none;
+        }
+        .list:hover .dropdown {
+            display: block;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="nev">
+        <img src="./codewell.png" alt="" height="80px">
+        <div class="list">
+            <ul class="mainlist">
+                <li>menu</li>
+                <li>about us</li>
+                <li>contact us</li>
+            </ul>
+            <div class="dropdown">
+                <ul>
+                    <li><a href="">item1</a></li>
+                    <li><a href="">item2</a></li>
+                    <li><a href="">item3</a></li>
+                    <li><a href="">item4</a></li>
+                    <li><a href="">item5</a></li>
+                    <li><a href="">item6</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

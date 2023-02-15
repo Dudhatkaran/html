@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sing up</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        .container {
+            margin-top: 5%;
+            width: 400px;
+            border: ridge 1.5px rgb(85, 23, 219);
+            padding: 20px;
+        }
+
+        body {
+            background: #d2dff8;
+            background: -webkit-linear-gradient(to right, #8b97a7, #E0EAFC);
+            background: linear-gradient(to right, #CFDEF3, #b6bcc7);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2 style="text-align: center;">Registration Form</h2> <br>
+        <div class="form-group">
+            <label>First name</label>
+            <input type="email" class="form-control" id="inputfirstname4" placeholder="Enter a firstname">
+        </div>
+        <div class="form-group">
+            <label>Last name</label>
+            <input type="email" class="form-control" id="inputlastname4" placeholder="Enter a lastname">
+        </div>
+        <div class="form-group">
+            <label>Email address</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Enter a email">
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="Enter a password">
+        </div>
+        <div class="form-group">
+            <label>Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Enter a address">
+        </div>
+        <button onclick="regstr()" type="submit" class="btn btn-primary">Sign up</button>
+    </div>
+
+    <script>
+
+        function regstr() {
+            let firstname = document.getElementById("inputfirstname4").value;
+            let lastname = document.getElementById("inputlastname4").value;
+            let email = document.getElementById("inputEmail4").value;
+            let password = document.getElementById("inputPassword4").value;
+            let address = document.getElementById("inputAddress").value;
+
+            let obj = { firstname, lastname, email, password, address }
+
+            let saveData = JSON.parse(localStorage.getItem("userData"));
+
+            // console.log(saveData);
+            
+            if (saveData == null) {
+                saveData = [obj];
+            }
+            else {
+                saveData.push(obj)
+            }
+
+            localStorage.setItem("userData", JSON.stringify(saveData));
+            document.getElementById("inputfirstname4").value = "";
+            document.getElementById("inputlastname4").value = "";
+            document.getElementById("inputEmail4").value = "";
+            document.getElementById("inputPassword4").value = "";
+            document.getElementById("inputAddress").value = "";
+        }
+    </script>
+</body>
+
+</html>

@@ -74,7 +74,8 @@ body {
     background: #4aba70;
     border: none;
     line-height: normal;
-    font-size: 20px;  
+    font-size: 20px;
+    margin-left: 100px;
 }
 
 .login-form .btn:hover,
@@ -97,10 +98,10 @@ body {
 .login-form .small {
     font-size: 13px;
     margin-top: 15px;
-    
+
 }
 
 .login-form a {
     color: #4aba70;
-    
+
 }

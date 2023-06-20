@@ -5,15 +5,13 @@
         function abc() {
             var name = document.getElementById("input").value;
             if (name == "") {
-                document.getElementById("message").innerHTML = "*hello";
+                document.getElementById("message").innerHTML = "this field is required";
                 document.getElementById("input").style.border = "2px solid blue"
             } else {
                 document.getElementById("message").innerHTML = "";
                 document.getElementById("input").style.border = "1px solid black"
             }
         }
-
-    
     </script>
     <style>
         .input {
@@ -21,8 +19,15 @@
             outline: none;
         }
         .message {
-            font-size: 25px;
+            font-size: 10px;
             color: rgb(226, 36, 141);
+        }
+        .dot {
+            height: 250px;
+            width: 250px;
+            background-color: #be4444;
+            border-radius: 50%;
+            display: inline-block;
         }
     </style>
 </head>

@@ -1,19 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1 id="xyz"></h1>
     <button onclick="hello()">submit</button>
     <script>
-        function hello(){
-            document.getElementById("xyz").innerHTML="hello how are you";
+        function hello() {
+            document.getElementById("xyz").innerHTML = "hello how are you";
             alert("ok")
         }
     </script>
+
+    <script>
+        const arr = [1, 2, 3, 4, 5];
+        console.log(arr.slice(2, 4));
+
+        const fruit = ['apple', 'banana', 'cherry', 'orange'];
+        fruit.splice(1, 2, 'mango', 'kiwi');
+        console.log(fruit);
+
+        const num = [1, 2, 3, 4, 5, 6];
+        const lastindex = num.lastIndexOf(5);
+        console.log('lastindex::: ', lastindex);
+
+        const number = [5, 10, 12, 20, 15];
+        const index = number.indexOf(21);
+        console.log('index::: ', index);
+
+        const fruits = ['apple', 'banana', 'mango'];
+        console.log(Array.isArray(fruits));
+
+        const abc = "hello-ok-1012-pop";
+        console.log('abc::: ', abc.length);
+
+        const hello = "HELLO-Ok-1012-pop";
+        console.log('abc::: ', hello.toLowerCase());
+
+        const ok = "hello-ok-1012-pop";
+        console.log('abc::: ', ok.charAt(7));
+
+        const a = "hello-ok-1012-pop";
+        console.log('abc::: ', a.substring(1, 2));
+
+        const ab = "hello-ok-1012-pop";
+        console.log('abc::: ', ab.repeat(4));
+
+        const abcd = "hello-ok-1012-pop";
+        console.log('abc::: ', abcd.split("-"));
+
+    </script>
 </body>
+
 </html>
